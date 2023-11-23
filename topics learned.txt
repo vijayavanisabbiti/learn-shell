@@ -69,4 +69,7 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 | transactions       |
 +--------------------+
 
+>/dev/null : this is to nullify the output
+that means it is never going to save any output to this file.
+
 
