@@ -1,0 +1,72 @@
+Learn shell script topics
+
+1. Comments
+2. Print
+3. Variables
+4. Functions
+5. Conditions
+6. Loops
+7. Redirectors
+8. Quotes
+9. SED Editor
+10. Exit status
+
+Redirectors:
+input from Keyboard and Output in terminal with the server.
+samething happens when we insert with a file
+< is used for input
+> is used for output
+
+Ex: mysql -t -uroot -pExpenseApp@1 <sample >out
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| transactions       |
++--------------------+
+
+This redirects the input of sample file to output to file named out
+>out : this creates the file named out and overwrites the content
+>> is for error / &> is for error and output
+
+
+Ex: mysql -t -uroot -pExpenseApp@1 <sample &>out
+This redirects the input of sample file to error and output to file named out
+mysql: [Warning] Using a password on the command line interface can be insecure.
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| transactions       |
++--------------------+
+
+Ex: mysql -t -uroot -pExpenseApp@1 <sample &>>out
+This will gives error and output two times
+mysql: [Warning] Using a password on the command line interface can be insecure.
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| transactions       |
++--------------------+
+mysql: [Warning] Using a password on the command line interface can be insecure.
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sys                |
+| transactions       |
++--------------------+
+
+
