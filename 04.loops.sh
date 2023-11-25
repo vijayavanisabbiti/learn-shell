@@ -10,5 +10,5 @@ while [ "$a" -gt 0 ]; do
 done
 
 for fruit in banana apple orange kiwi peach ; do
-  echo 'Fruit_name: $fruit'
+  echo 'Fruit_name:' $fruit
 done
