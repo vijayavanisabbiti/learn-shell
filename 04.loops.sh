@@ -8,3 +8,7 @@ while [ "$a" -gt 0 ]; do
   echo 'Hello World'
   a=$(($a-1))
 done
+
+for fruit in banana apple orange kiwi peach ; do
+  echo 'Fruit_name: $fruit'
+done
