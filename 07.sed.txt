@@ -1,0 +1,53 @@
+Operations performed using SED editor
+
+1. Search and replace words
+2. deleting the lines
+3. add the lines
+4. Change/replace the lines
+
+SED is editor
+
+Ex: create a file with below content
+
+/etc/passwd
+User account information.
+/etc/shadow
+Secure user account information.
+/etc/group
+Group account information.
+/etc/gshadow
+Secure group account information.
+/etc/default/useradd
+Default values for account creation.
+/etc/skel/
+Directory containing default files.
+/etc/login.defs
+Shadow password suite configuration.
+
+*************************************************
+To reflect the changes in file, use -i otherwise the changes are temporary and won't update the original file.
+*************************************************
+
+Syntax : sed 's/etc/tmp' <file_name>
+# s stands for substitute
+# / is used for boundaries/delimiters
+
+sed 's/account/login/g' <file_name>
+g means global : which is used to replace the word anywhere in the line/file
+
+There are two ways to delete the lines
+1. delete using '2d' option
+    syntax : sed '2d' <file_name>
+2. search using word and delete the line
+    syntax : sed '/etc/ d' <file_name>
+
+Adding lines in 2 ways
+1. sed '1 a Hello world' file
+2. sed '/etc/ a Hello World' file
+
+Replace lines
+1. sed '1 c Hello world' file
+2. sed '/etc/ c Hello World' file
+use c to change the lines
+
+to perform more operations use -e with sed
