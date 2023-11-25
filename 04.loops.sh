@@ -4,7 +4,7 @@
 # Loop is used when you're trying to execute the same set of commands again and again in an iterative way
 
 a=12
-while ( '$a' -gt 0 ); do
+while ( "$a" -gt 0 ); do
   echo 'Hello World'
   a=$(($a-1))
 done
