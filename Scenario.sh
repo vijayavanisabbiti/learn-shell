@@ -1,9 +1,8 @@
 i=0
-want=11
 
 while read -r line; do
   i=$(( i+1 ))
-  if [ $i -eq "$want" ]; then
+  if [ $i -eq "11" ]; then
     echo "$line"
     break
   fi
