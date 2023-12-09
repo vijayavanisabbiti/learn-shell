@@ -1,7 +1,12 @@
 i=0
+want=11
 
 while read -r line; do
-  test $((++i))=10 && echo "$line"
+  i=$(( i+1 ))
+  if [ $i -eq "$want" ]; then
+    echo "$line"
+    break
+  fi
 done <joindevops.txt
 
 
