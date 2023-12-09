@@ -1,5 +1,3 @@
-source joindevops.txt
-
-for LINE in $(cat source); do
-    echo "$LINE"
-done
+while read -r  line; do
+  echo "$line"
+done <joindevops.txt
