@@ -8,11 +8,11 @@ while read -r line; do
   fi
 done <joindevops.txt
 
+cat joindevops.txt
 
 
-
-while read -r  line; do
-  echo "${line[11]}"
-done <joindevops.txt
+#while read -r  line; do
+#  echo "${line[11]}"
+#done <joindevops.txt
 
 
