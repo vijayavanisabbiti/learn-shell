@@ -1,7 +1,7 @@
 i=0
 
 while read -r line; do
-  test $((++i))=11 && echo "$line"
+  test $((++i))=10 && echo "$line"
 done <joindevops.txt
 
 
